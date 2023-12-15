@@ -1,0 +1,33 @@
+body { 
+  background-color: #01282a;
+}
+
+
+#title {
+  color: white;
+  margin-left: 40%;
+}
+
+
+textarea {
+  width: 40%;
+  margin-left: 33%;
+  margin-top: 4%;
+  height: 25%;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+#submitbutton {
+    color: black;
+    background: #aac3c5;
+    width: 26%;
+    height: 40px;
+    margin-top: 2%;
+    margin-left: 39%;
+    border-radius: 4px;
+
+}
+
+

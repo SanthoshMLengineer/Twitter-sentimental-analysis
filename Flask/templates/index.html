@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Twitter Sentimental Analysis
+		</title>
+		<link rel="stylesheet" type="text/css" href="static/index.css">
+	</head>
+	<body>
+
+		<h1 id='title'>Twitter Sentimental Analysis</h1>
+
+		<div class="results">
+			<br>
+				{% if prediction=="Positive" %}
+					<h4 class="text-center" style="color:white;margin-left: 46%">Prediction: Good Tweets!!</h4>
+				{% elif prediction=="Negative" %}
+					<h4 class="text-center" style="color:white;margin-left: 46%">Prediction: Bad Tweets!! </h4>
+					
+				{% endif %}
+		</div>
+
+		<div class="form-container">
+			<form method="post" action="/predict">
+				<textarea name="message" rows="15" cols="75" placeholder="Enter Your Review Here..." required ></textarea><br/>
+
+				<button type="submit" id='submitbutton'>Predict</button>
+
+			</form>
+		</div>		
+	</body>
+</html>
